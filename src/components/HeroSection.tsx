@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiArrowDown } from 'react-icons/fi';
 import personalInfo from '../data/personalInfo.json';
+import profilePicture from '../assets/profile_picture.png'
 
 const HeroSection = () => {
   const scrollToNext = () => {
@@ -17,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <img 
-            src="/src/assets/profile_picture.png" 
+            src={profilePicture} 
             alt={personalInfo.name} 
             className="w-48 h-48 rounded-full mx-auto mb-8 object-fit shadow-lg"
           />
