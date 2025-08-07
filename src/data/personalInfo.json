@@ -1,0 +1,32 @@
+{
+  "name": "Melvin Salazar",
+  "title": "Software Engineering Leader",
+  "email": null,
+  "phone": null,
+  "location": "San Francisco Bay Area, CA",
+  "linkedIn": {
+    "url": "https://linkedin.com/in/mel-salazar",
+    "username": "mel-salazar"
+  },
+  "bio": {
+    "summary": "Engineering leader with 8+ years of experience delivering scalable customer support systems. Led a full-stack team, shipping the Help Center platform at LinkedIn, GPT-powered assistants, and CRM-integrated case management tools used by millions of users. Skilled in cross-functional leadership, hiring, coaching, and driving impact across product, design, and support operations.",
+    "description": [
+      "As a leader I have managed and mentored a diverse team of full-stack engineers, supporting career development, code quality, and technical growth.",
+      "I have coached engineers through review cycles and performance improvement plans.",
+      "I have led the engineering for LinkedIn’s primary user support platform, impacting 1B+ users. This included, the Help Center, GPT powered assistants, real-time Live Chat integrations, intelligent routing, and personalized case flows to enhance self-service and case deflection.",
+      "I have directed a high-performing team of ICs while driving cross-functional initiatives in collaboration with PM, design, datascience, and CRM partners."
+    ]
+  },
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "interests": [
+    "Engineering leadership roles",
+    "AI/LLM integration projects",
+    "Support automation solutions",
+    "CRM integration consulting",
+    "Technical mentoring opportunities"
+  ],
+  "showContactMe": true
+}
