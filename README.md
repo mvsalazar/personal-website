@@ -1,69 +1,117 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fast, and responsive personal website built with [Vite](https://vitejs.dev/), [React](https://react.dev/), and [TypeScript](https://www.typescriptlang.org/). Deployed seamlessly to GitHub Pages using GitHub Actions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ⚡️ Fast bundling with Vite
+- ⚛️ React for UI components
+- 🔒 TypeScript for type safety
+- 🎨 TailwindCSS for styling
+- 🖼️ Image and static asset support
+- 🌐 Deployed automatically on push to `main`
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend**: React, TypeScript, TailwindCSS
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages via GitHub Actions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Local Development
+
+### Prerequisites
+
+- Node.js 20+
+
+### Install Dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Start Dev Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🚚 Deployment
+
+Deployment is handled automatically by GitHub Actions whenever changes are pushed to the `main` branch.
+
+### CI Deploy (GitHub Actions)
+
+GitHub Actions uses the following command for deployment:
+
+```bash
+npm run deploy:ci
+```
+
+This runs:
+
+```json
+"deploy:ci": "gh-pages -d dist -u \"github-actions-bot <support+actions@github.com>\" -r https://x-access-token:${GITHUB_TOKEN}@github.com/{{YOUR_GITHUB_USER_NAME}}/personal-website.git"
+```
+
+> Note: `${GITHUB_TOKEN}` is automatically provided by GitHub Actions.
+
+### Manual Deploy (Local)
+
+To deploy manually from your local machine:
+
+```bash
+npm run deploy
+```
+
+This runs:
+
+```json
+"deploy": "gh-pages -d dist"
+```
+
+Make sure you have proper GitHub authentication configured locally (e.g., via SSH or a GitHub CLI session).
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── public/                 # Static public assets
+├── src/                    # Source code
+│   ├── assets/             # Images and media
+│   ├── components/         # Reusable React components
+│   ├── App.tsx             # Root component
+│   └── main.tsx            # Entry point
+├── vite.config.ts          # Vite configuration
+├── package.json            # NPM scripts and dependencies
+├── tsconfig.json           # TypeScript config
+└── .github/workflows/      # GitHub Actions workflows
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋‍♂️ Author
+
+Built by [Melvin Salazar](https://github.com/msalazar) — feel free to reach out with questions or improvements!
+
