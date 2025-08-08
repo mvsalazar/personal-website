@@ -40,7 +40,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="min-h-screen py-20 bg-white dark:bg-slate-900">
+    <section id="contact" className="min-h-screen py-20 bg-white dark:bg-slate-900" data-testid="contact-section">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           ref={ref}

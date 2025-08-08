@@ -54,7 +54,7 @@ const SkillsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="skills" className="min-h-screen py-20 bg-slate-50 dark:bg-slate-800">
+    <section id="skills" className="min-h-screen py-20 bg-slate-50 dark:bg-slate-800" data-testid="skills-section">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           ref={ref}
