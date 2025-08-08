@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import App from './App'
 
 // Fix matchMedia mock (for useDarkMode or CSS media queries)
