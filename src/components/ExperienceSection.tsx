@@ -2,75 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
-
-const experiences = [
-  {
-    title: "Senior Software Engineer",
-    company: "LinkedIn",
-    location: "Sunnyvale, CA",
-    duration: "Oct 2024 – May 2025",
-    description: [
-      "Delivered backend enhancements in Java and Scala to increase support tooling reliability and uptime",
-      "Designed intelligent case routing logic to personalize support workflows",
-      "Partnered with PM and CRM stakeholders to launch high-impact features, including AI-powered content summarization and semantic search to enhance user content delivery",
-      "Ensured operational excellence via on-call rotations, real-time monitoring, and fast incident resolution"
-    ],
-    technologies: ["Java", "Scala", "CRM Integration", "Real-time Monitoring", "Incident Resolution"]
-  },
-  {
-    title: "Software Engineering Manager",
-    company: "LinkedIn",
-    location: "Sunnyvale, CA",
-    duration: "Aug 2022 – Oct 2024",
-    description: [
-      "Managed a diverse team, providing mentorship, coaching, and career guidance",
-      "Owned LinkedIn's Help Center and user support surface",
-      "Delivered offline webform flows, curated help content, and real-time Live Chat",
-      "Launched GPT-powered virtual assistants to enhance automation and reduce case volumes",
-      "Led cross-functional collaboration with product, design, data science, and CRM teams"
-    ],
-    technologies: ["Team Leadership", "GPT Integration", "Live Chat", "A/B Testing", "Cross-functional Collaboration"]
-  },
-  {
-    title: "Senior Software Engineer",
-    company: "LinkedIn",
-    location: "Sunnyvale, CA",
-    duration: "Oct 2019 – Aug 2022",
-    description: [
-      "Built and scaled CRM integrations (Oracle, Salesforce, Dynamics)",
-      "Developed REST APIs and A/B tested backend performance",
-      "Interfaced APIs with different Line of Business services to deliver a more personalized support experience",
-      "Develop and executed plan to migrate externally hosted chat clients to an all-in-one in house chat solution",
-      "Worked cross-functionally to reduce support friction and improve response times"
-    ],
-    technologies: ["Oracle", "Salesforce", "Microsoft Dynamics", "REST APIs", "A/B Testing"]
-  },
-  {
-    title: "Software Engineer",
-    company: "LinkedIn",
-    location: "Sunnyvale, CA",
-    duration: "Aug 2017 – Oct 2019",
-    description: [
-      "Developed Help Center features using Java, TypeScript, JavaScript, Ember.js, and Framptom.js",
-      "Improved case creation UX and reduced latency",
-      "Enhanced content discoverability to increase user engagement"
-    ],
-    technologies: ["Java", "TypeScript", "JavaScript", "Ember.js", "Framptom.js"]
-  },
-  {
-    title: "Tools Engineer",
-    company: "LinkedIn",
-    location: "Sunnyvale, CA",
-    duration: "Aug 2016 – Aug 2017",
-    description: [
-      "Maintained and enhanced the Oracle Service Cloud (RightNow) Customer Portal, serving millions of monthly visitors",
-      "Collaborated in building and monitoring data hygiene and maintenance tools for large-scale production DBs, improving integrity and query performance",
-      "Built tools for workflows that integrated CRM data with member data for bug tracking using PHP, MySQL and AngularJS",
-      "Assisted in the migration of vanilla PHP code to Laravel Framework, and deployment pipelines using GitLab."
-    ],
-    technologies: ["Oracle Service Cloud", "CI/CD", "Database Optimization", "Multi-language Builds"]
-  }
-];
+import personalInfo from '../data/personalInfo.json';
 
 const ExperienceSection = () => {
   const ref = useRef(null);
@@ -98,7 +30,7 @@ const ExperienceSection = () => {
         <div className="relative">
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-blue-200 dark:bg-blue-800"></div>
           
-          {experiences.map((exp, index) => (
+          {personalInfo.experiences.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}

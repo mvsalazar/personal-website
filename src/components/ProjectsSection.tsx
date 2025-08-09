@@ -1,41 +1,16 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { AiFillBug } from 'react-icons/ai';
+import type { IconType } from 'react-icons';
+import { AiFillBug, AiFillProject } from 'react-icons/ai';
 import { FiExternalLink, FiGithub, FiUsers, FiTrendingUp, FiLinkedin } from 'react-icons/fi';
+import personalInfo from '../data/personalInfo.json';
 
-const projects = [
-  {
-    title: "LinkedIn Help Center Platform",
-    description: "Led the development of LinkedIn's comprehensive user support platform, including Help Center, GPT-powered virtual assistants, and real-time Live Chat integrations.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Java", "Scala", "GPT Integration", "Live Chat", "CRM"],
-    features: ["GPT-powered assistants", "Real-time Live Chat", "Intelligent routing", "Case management", "A/B testing"],
-    github: "",
-    live: "https://www.linkedin.com/help",
-    icon: FiUsers
-  },
-  {
-    title: "CRM Integration Platform",
-    description: "Built and scaled comprehensive CRM integrations connecting Oracle Service Cloud, Salesforce, and Microsoft Dynamics with LinkedIn's support ecosystem.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Java", "Oracle", "Salesforce", "Microsoft Dynamics", "REST APIs"],
-    features: ["Multi-CRM support", "Data synchronization", "Performance optimization"],
-    github: "",
-    live: "",
-    icon: FiTrendingUp
-  },
-  {
-    title: "Bug Tracking Tool",
-    description: "Developed an intelligent case analitycs tool. Integrated categorization data from Oracle Service Cloud (formerly known as RightNow). The Operations organization used this tool to surface trend issues that could potentially identify bugs based on the trends.",
-    image: "/api/placeholder/400/250",
-    technologies: ["AngularJs", "PHP", "MySQL"],
-    features: ["CRM Data Integretaion", "Data automation workflows", "Bug monitoring", "Data analytics"],
-    github: "",
-    live: "",
-    icon: AiFillBug
-  }
-];
+const iconMap: { [key: string]: IconType } = {
+  AiFillBug,
+  FiTrendingUp,
+  FiUsers
+}
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -61,8 +36,8 @@ const ProjectsSection = () => {
         </motion.div>
 
         <div className="space-y-12">
-          {projects.map((project, index) => {
-            const IconComponent = project.icon;
+          {personalInfo.projects.map((project, index) => {
+            const IconComponent = iconMap[project.icon] || AiFillProject
             return (
               <motion.div
                 key={index}
