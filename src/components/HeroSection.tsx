@@ -17,17 +17,18 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img 
-            src={profilePicture} 
-            alt={personalInfo.name} 
-            className="w-48 h-48 rounded-full mx-auto mb-8 object-fit shadow-lg"
-          />
+          <div className="profile-container w-48 h-48 rounded-full mx-auto mb-8 object-fit shadow-lg">
+            <img 
+              src={profilePicture} 
+              alt={personalInfo.name} 
+            />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-4">
             {personalInfo.name}
           </h1>
-          {personalInfo.peferredName &&
+          {personalInfo.preferredName &&
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              ({personalInfo.peferredName})
+              ({personalInfo.preferredName})
             </h2>
           }
           <h2 className="text-2xl md:text-3xl text-slate-600 dark:text-slate-300 mb-6">

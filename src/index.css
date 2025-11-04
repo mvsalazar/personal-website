@@ -100,3 +100,21 @@ textarea:focus {
   pointer-events: none; /* Prevent interaction */
   opacity: 0.6;
 }
+
+.profile-container {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.profile-container img {
+  width: 125%; /* zoom in */
+  height: 125%;
+  object-fit: cover;
+  position: absolute;
+  top: -14%;  /* move image DOWN or UP */
+  left: 1%;
+  transform: translateY(15px); /* adjust downwards */
+  filter: brightness(1.2);
+}
