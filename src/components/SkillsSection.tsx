@@ -17,7 +17,8 @@ import {
   SiRedis, 
   SiKubernetes,
   SiGraphql,
-  SiVite
+  SiVite,
+  SiClaude,
 } from 'react-icons/si';
 
 const skills = {
@@ -30,9 +31,10 @@ const skills = {
     { name: "Laravel", icon: FaLaravel, color: "text-blue-600" },
   ],
   "AI / LLM Technologies": [
-    { name: "GPT Integration", icon: FaReact, color: "text-green-500" },
+    { name: "GPT Integration", icon: SiClaude, color: "text-green-500" },
     { name: "AI Assistants", icon: SiGraphql, color: "text-purple-500" },
     { name: "Support Automation", icon: FaNodeJs, color: "text-blue-500" },
+    { name: "AI Assisted Development", icon: SiClaude, color: "text-blue-500" },
   ],
   "Practices & Tools": [
     { name: "A/B Testing", icon: SiPostgresql, color: "text-blue-700" },

@@ -1,7 +1,7 @@
 {
   "name": "Melvin Salazar",
   "preferredName": null,
-  "title": "Software Engineering Leader",
+  "title": "Engineering Leader | Technical Expert",
   "email": null,
   "phone": null,
   "location": "San Francisco Bay Area, CA",
@@ -25,6 +25,7 @@
   "interests": [
     "Engineering leadership roles",
     "AI/LLM integration projects",
+    "Technical Support Engineer Roles",
     "Support automation solutions",
     "CRM integration consulting",
     "Technical mentoring opportunities"
@@ -127,6 +128,57 @@
     }
   ],
   "projects": [
+    {
+      "title": "Assistly – AI-Powered Support Widget",
+      "description": "Building a fully customizable AI support widget and help center platform for small and medium businesses, featuring AI Chat Agents, offline support, scoped customer provided content for answer generation and intent detection generated CTAs.",
+      "image": "/api/placeholder/400/250",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "React",
+        "Firebase",
+        "Prisma",
+        "PostgreSQL",
+        "Vector Search",
+        "OpenAI"
+      ],
+      "features": [
+        "AI-powered support chat assistant",
+        "Customizable widget with basic theming",
+        "Embeddings & RAG search",
+        "Intent detection for CTA like lead capture, support",
+        "Instant content searchability and widget changes"
+      ],
+      "github": "",
+      "live": "",
+      "icon": "FiZap"
+    },
+    {
+      "title": "NextStep - Predictable Task & Rewards App",
+      "description": "Mobile-first routine tracker with child/adult modes, visual schedules, rewards, and low-stim accessibility. I created this app with neurodivergency in mind using proven methods to maintain focus.",
+      "image": "/api/placeholder/400/250",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "TanStack Query",
+        "Zustand",
+        "Framer Motion",
+        "MSW"
+      ],
+      "features": [
+        "Daily task creation and visual progress",
+        "Child vs adult modes with optional star rewards",
+        "Low-stim theme and reduced motion support to reduce stimulation and increase engagement",
+        "Keyboard-first navigation and screen reader labels",
+        "Local storage with optional API adapter and import/export"
+      ],
+      "github": "",
+      "live": "",
+      "icon": "FiCheckCircle"
+    },
     {
       "title": "LinkedIn Help Center Platform",
       "description": "Led the development of LinkedIn's comprehensive user support platform, including Help Center, GPT-powered virtual assistants, and real-time Live Chat integrations.",
