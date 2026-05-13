@@ -122,12 +122,6 @@ Make sure you have proper GitHub authentication configured locally (e.g., via SS
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 🙋‍♂️ Author
 
 Built by [Melvin Salazar](https://github.com/msalazar) — feel free to reach out with questions or improvements!
