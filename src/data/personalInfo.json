@@ -30,7 +30,31 @@
     "CRM integration consulting",
     "Technical mentoring opportunities"
   ],
-  "experiences": [
+  "experiences": [{
+      "title": "Technical Support Engineer II",
+      "company": "PagerDuty",
+      "location": "San Francisco, CA",
+      "duration": "Feb 2026 – Aug 2026",
+      "description": [
+        "Investigated and resolved complex technical issues across PagerDuty’s SaaS platform, REST APIs, integrations, automation workflows, and DevOps ecosystem",
+        "Partnered with Engineering and Product teams to troubleshoot distributed systems, identify root causes, and drive resolution of high impact customer issues",
+        "Served as an escalation engineer for complex enterprise cases, delivering detailed technical investigations and clear, actionable guidance",
+        "Worked directly with developers, DevOps engineers, and enterprise customers to diagnose API behavior, authentication issues, integration failures, and platform performance concerns",
+        "Combined deep technical expertise with strong customer communication to explain complex system behavior and build customer confidence",
+        "Contributed to improving support processes, documentation, and knowledge sharing to reduce resolution times and improve customer outcomes",
+        "Developed internal Python tooling to automate custom Salesforce reporting using the Salesforce CLI and SOQL, reducing manual effort and improving access to operational data",
+        "Enhanced internal support tools and workflows to improve engineer productivity and streamline troubleshooting",
+        "Helped define internal guidelines for the responsible use of AI in Technical Support, serving as an advisor on best practices for AI-assisted investigations, customer interactions, and operational workflows"
+      ],
+      "technologies": [
+        "Python",
+        "SalesForce",
+        "Grafana",
+        "SnowFlake",
+        "PagerDuty Incident Management",
+        "API Integration"
+      ]
+    },
     {
       "title": "Senior Software Engineer",
       "company": "LinkedIn",
